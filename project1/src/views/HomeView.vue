@@ -6,7 +6,7 @@
           active-text-color="#ffd04b"
           background-color="#545c64"
           class="menuCss el-menu-vertical-demo"
-          default-active="2"
+          :default-active="activeIndex"
           :router="true"
           text-color="#fff"
           @open="handleOpen"
@@ -32,9 +32,6 @@
             </el-sub-menu>
           </el-sub-menu>
           <el-menu-item index="/carousel">
-            <el-icon>
-              <icon-menu />
-            </el-icon>
             <span>Navigator Two</span>
           </el-menu-item>
           <el-menu-item index="/tableview" disabled>
@@ -64,8 +61,21 @@ export default {
   name: "HomeView",
   components: {},
   data() {
-    return {};
+    return {
+      activeIndex:"/carousel"
+    };
   },
+  mounted () {
+    this.activeIndex =this.$route.path
+  },
+  //   watch: {
+  //     activeIndex(newValue){
+  //       console.log(newValue,'newValue')
+  //             if(newValue != this.$route.path){
+  //                     this.activeIndex = this.$route.path;
+  //             }
+  //     }
+  // },
   methods: {
     handleOpen(key, keyPath) {
       console.log(key, keyPath);
