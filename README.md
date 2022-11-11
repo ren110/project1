@@ -1,3 +1,3 @@
 # project1
-vuecli3 +elemenelement+plus
+vuecli3 +element+plus 
 
