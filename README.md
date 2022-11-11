@@ -1,2 +1,3 @@
 # project1
-git 练习项目
+vuecli3 +elemenelement+plus
+
