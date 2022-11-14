@@ -63,6 +63,10 @@ export default {
       ],
     };
   },
+  mounted () {
+    this.utils.getTraceFeont()
+    console.log(this.$url,'--')
+  },
   methods: {
     handleClick() {
       console.log("click");

@@ -2,7 +2,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import $url from "@/fetch/api";
+import $url from "@/fetch/index";
 import $https from "@/fetch/axios";
 import utils from "@/utils/tool";
 import ElementPlus from "element-plus";
