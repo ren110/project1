@@ -18,6 +18,7 @@ export default {
       }
     }
   },
+  //所有的异步都要通过actions调用
   actions: {
     async getorgList({ commit }){
       await that.$https.fetchPost(that.$url.userInfo.getTeamList, {}, that, false, false).then((res) => {
